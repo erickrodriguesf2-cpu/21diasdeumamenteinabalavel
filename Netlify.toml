@@ -1,0 +1,16 @@
+# netlify.toml
+# Arquivo de configuração para Netlify, define como construir e publicar o site
+
+[build]
+  # Comando de construção do site
+  # Como seu site é HTML estático, apenas usamos um comando simbólico
+  command = "echo 'Site estático, sem build necessário'"
+  # Diretório que contém o index.html
+  publish = "."
+
+[context.production.environment]
+  # Variáveis de ambiente caso precise, exemplo:
+  # NODE_ENV = "production"
+
+# Esse arquivo garante que a Netlify saiba que seu projeto é estático
+# e deve apenas copiar os arquivos da pasta de publicação para o servidor.
